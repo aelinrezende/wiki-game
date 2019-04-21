@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "448c34a56d699c29117adc64c43affeb",
-    "url": "/wiki-game/static/media/glyphicons-halflings-regular.448c34a5.woff2"
+    "revision": "fa2772327f55d8198301fdb8bcfc8158",
+    "url": "/wiki-game/static/media/glyphicons-halflings-regular.fa277232.woff"
   },
   {
     "revision": "2b8f7814b424a020a281",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/wiki-game/static/js/main.2b8f7814.chunk.js"
   },
   {
-    "revision": "fa2772327f55d8198301fdb8bcfc8158",
-    "url": "/wiki-game/static/media/glyphicons-halflings-regular.fa277232.woff"
+    "revision": "448c34a56d699c29117adc64c43affeb",
+    "url": "/wiki-game/static/media/glyphicons-halflings-regular.448c34a5.woff2"
   },
   {
     "revision": "e18bbf611f2a2e43afc071aa2f4e1512",
