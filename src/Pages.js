@@ -11,7 +11,7 @@ export const pages = [
 	{
 		title: 'Rävabackena',
 		shortDescription: 'Rävabacken é o ponto mais alto da província histórica sueca de Blekinge.Está situado no município de Olofström, e tem uma altitude máxima de 189,65 metros.',
-		longDescription: 'Sem descrição longa',
+		longDescription: 'Sem descrição longa.',
 		link: 'https://pt.wikipedia.org/wiki/R%C3%A4vabacken',
 		rating: 2,
 		overall: 'COMUM',
@@ -20,7 +20,7 @@ export const pages = [
 	{
 		title: 'O Judeu de Malta',
 		shortDescription: 'O judeu de Malta é uma peça de Christopher Marlowe, provavelmente escrita em 1589 ou 1590. Seu enredo é uma história original de conflito religioso, intrigas, contra um pano de fundo a luta pela supremacia entre a Espanha e o Império Otomano no Mediterrâneo que tem lugar na ilha de Malta. O Judeu de Malta é considerado como tendo sido uma grande influência sobre William Shakespeare em O Mercador de Veneza.',
-		longDescription: 'Sem descrição longa',
+		longDescription: 'Sem descrição longa.',
 		link: 'https://pt.wikipedia.org/wiki/O_Judeu_de_Malta',
 		rating: 3,
 		overall: 'COMUM',
@@ -38,7 +38,7 @@ export const pages = [
 	{
 		title: "Dublagem de Everybody Hates Chris",
 		shortDescription: "Elenco da dublagem brasileira da série Todo Mundo Odeia o Chris.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Dublagem_de_Everybody_Hates_Chris',
 		rating: 7.5,
 		overall: 'RARA',
@@ -47,7 +47,7 @@ export const pages = [
 	{
 		title: "Campeonato Africano das Nações de 1980",
 		shortDescription: "O Campeonato Africano das Nações de 1980 foi a 12ª edição do Campeonato Africano das Nações. Ocorreu entre 8 e 22 de Março de 1980, na Nigéria. A Nigéria venceu a Argélia na final.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Campeonato_Africano_das_Na%C3%A7%C3%B5es_de_1980',
 		rating: 1,
 		overall: 'COMUM',
@@ -56,7 +56,7 @@ export const pages = [
 	{
 		title: "Milavče",
 		shortDescription: "Milavče é uma comuna checa localizada na região de Plzeň, distrito de Domažlice.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Milav%C4%8De',
 		rating: 0.5,
 		overall: 'COMUM',
@@ -65,7 +65,7 @@ export const pages = [
 	{
 		title: "Ogasawarana rex",
 		shortDescription: "Ogasawarana rex é uma espécie de gastrópode da família Helicinidae. É endémica de Japão.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Ogasawarana_rex',
 		rating: 0.5,
 		overall: 'COMUM',
@@ -83,7 +83,7 @@ export const pages = [
 	{
 		title: "Ágnes Szávay",
 		shortDescription: "Ágnes Szávay (Kiskunhalas, 29 de dezembro de 1988) é uma ex-tenista profissional da Hungria. Conseguiu em sua carreira na WTA ser nº 13 em 14 de abril, 2008.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/%C3%81gnes_Sz%C3%A1vay',
 		rating: 5,
 		overall: 'COMUM',
@@ -101,7 +101,7 @@ export const pages = [
 	{
 		title: "Ethmia candidella",
 		shortDescription: "Ethmia candidella é uma espécie de insetos lepidópteros, mais especificamente de traças, pertencente à família Elachistidae. A autoridade científica da espécie é Alphéraky, tendo sido descrita no ano de 1908. Trata-se de uma espécie presente no território português.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Ethmia_candidella',
 		rating: 4,
 		overall: 'COMUM',
@@ -110,7 +110,7 @@ export const pages = [
 	{
 		title: "Oficial de registro",
 		shortDescription: "O oficial de registro, oficial registrador ou registrador é um profissional da área do Direito, dotado de fé pública, a quem é delegado o exercício da atividade de registro. É conhecido genericamente como tabelião, termo que abrange também os notários.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Oficial_de_registro',
 		rating: 3,
 		overall: 'COMUM',
@@ -119,7 +119,7 @@ export const pages = [
 	{
 		title: "Acacia alata var. biglandulosa",
 		shortDescription: "Acacia alata var. biglandulosa é uma espécie de leguminosa do gênero Acacia, pertencente à família Fabaceae",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Acacia_alata_var._biglandulosa',
 		rating: 1.5,
 		overall: 'COMUM',
@@ -137,7 +137,7 @@ export const pages = [
 	{
 		title: "Plaidt",
 		shortDescription: "Plaidt é um município da Alemanha localizado no distrito de Mayen-Koblenz, estado da Renânia-Palatinado. Pertence ao Verbandsgemeinde de Pellenz.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Plaidt',
 		rating: 1,
 		overall: 'COMUM',
@@ -146,7 +146,7 @@ export const pages = [
 	{
 		title: "Tratado de Montevidéu de 1890",
 		shortDescription: "O Tratado de Montevidéu foi um diploma assinado entre a Argentina e o Brasil a 25 de Janeiro de 1890. Negociado por Quintino Bocaiúva enquanto Ministro das Relações Exteriores da recém-proclamada República brasileira, os seus termos visavam solucionar a chamada Questão de Palmas, de limites entre ambas as repúblicas, tendo como resultado a divisão da região entre ambos os países.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Tratado_de_Montevid%C3%A9u_de_1890',
 		rating: 5.5,
 		overall: 'RARA',
@@ -155,7 +155,7 @@ export const pages = [
 	{
 		title: "Caetano e Chico Juntos e Ao Vivo",
 		shortDescription: "Caetano e Chico Juntos e Ao Vivo é um disco ao vivo de Chico Buarque e Caetano Veloso, gravado em um show no Teatro Castro Alves, Salvador, nos dias 10 e 11 de novembro de 1972.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Caetano_e_Chico_Juntos_e_Ao_Vivo',
 		rating: 4.5,
 		overall: 'COMUM',
@@ -164,7 +164,7 @@ export const pages = [
 	{
 		title: "The Saga Continues (álbum de Roger Troutman)",
 		shortDescription: "The Saga Continues é o segundo álbum solo do músico Roger Troutman, lançado em 1984 pela Warner Bros. O álbum contém um cover da canção de Wilson Pickett, 'In the Midnight Hour', que atingiu o número 34 na parada U.S. R&B chart, bem como os sucessos 'In the Mix' e 'Girl Cut It Out', um dueto com Wanda Rush. Como o disco antecessor, The Many Facets of Roger, Troutman e seus companheiros da banda Zapp, incluindo os irmãos Lester, Larry e Terry, o ajudaram na produção do álbum.",
-		longDescription: "Sem descrição longa",
+		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/The_Saga_Continues_(%C3%A1lbum_de_Roger_Troutman)',
 		rating: 3,
 		overall: 'COMUM',

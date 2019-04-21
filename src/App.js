@@ -51,6 +51,7 @@ class App extends Component {
           pages={this.state.pages}
         />
       }
+      <footer>Desenvolvido por @deiny ® | Cartas: {Pages.pages.length} de 1.002.000+ | Wi-ki-oh@beta1.0.0</footer>
       </div>
     )
   }

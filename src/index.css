@@ -3,6 +3,8 @@
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', 'Raleway', sans-serif;
+  transition: .5s all;
+  animation: .5 all;
 }
 
 body {
@@ -72,6 +74,11 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	margin: 0 auto;
 }
 
+/*.image-container img:hover {
+	transform:scale(1.01);
+	transform-origin: 50% 50%;
+}*/
+
 .info-container {
 	padding: 5px 10px;
 }
@@ -115,8 +122,26 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 	background-color: #555;
 }
 
+div.sweet-alert.showSweetAlert.visible::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	background-color: transparent;
+}
+
+div.sweet-alert.showSweetAlert.visible::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+div.sweet-alert.showSweetAlert.visible::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
 .info-container .points {
-	border-top: 1px solid  rgba(0,0,0,.5);
+	border-top: 1px solid  rgba(0,0,0,.2);
 	margin: 15px 0 0 0;
 	padding: 10px 0 0 0;
 	display: block;
@@ -158,18 +183,18 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .btn.link-to-wiki-page {
   display: block;
   color: #fff;
-  border: 2px solid #fff !important;
+  border: 2px solid rgba(0,0,0,.1) !important;
   float: left;
   font-size: 11pt;
   text-align: left;
   margin: 0 10px 0 0;
   font-size: 10pt;
+  float: left;
 }
 
 .btn.link-to-wiki-page:hover {
-  color: #000;
-  background-color: #d6d6d6;
-  border: 2px solid #fff !important;
+	color: #fff;
+  	border: 2px solid rgba(0,0,0,.5) !important;
 }
 
 .btn.link-to-long-description {
@@ -179,15 +204,17 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 11pt;
   text-align: right;
   font-size: 10pt;
+  border: 2px solid rgba(0,0,0,.1) !important;
 }
 
 .btn.link-to-long-description:hover {
   color: #fff;
-  border: 1px solid #fff !important;
+  border: 2px solid rgba(0,0,0,.5) !important;
 }
 
-span.substract-points {
-	background-image: url('./icons/substract.svg');
+.container-btn-long {
+	display: block;
+	float: right;
 }
 
 /* Lista de jogadores */
@@ -197,6 +224,7 @@ span.substract-points {
 	float: left;
 	color: #fff;
 	margin: 10px 0 0 0;
+	width: 150px;
 }
 
 .wrapper-players ul {
@@ -246,8 +274,23 @@ span.substract-points {
 	font-size: 14pt;
 }
 
+.btn-shuffle:hover {
+	background-color: rgba(255,255,255,0.1);
+}
+
+.players-info {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 .players-info .points {
 	margin: 0 3px;
+}
+
+.players-info span {
+	text-align: center;
 }
 
 /* Registro de jogadores */
@@ -296,4 +339,60 @@ span.substract-points {
 	font-size: 1rem;
 	line-height: 1.5;
 	font-size: 12pt;
+}
+
+div.hideSweetAlert {
+	background-color: #878787 !important;
+}
+
+div.sweet-alert.showSweetAlert.visible {
+	overflow-y: scroll !important;
+	box-shadow: 14px 16px 44px -4px rgba(0,0,0,.3) !important;
+	background-color: #878787 !important;
+}
+
+.sweet-alert {
+	height: 500px;
+	background-color: #878787 !important;
+}
+
+.sweet-alert p, h2 {
+	color: #fff !important;
+}
+
+button.confirm {
+	display: block;
+	margin: 0 auto;
+	border-radius: 0.25rem !important;
+	border: 2px solid rgba(255,255,255,.8) !important;
+	color: #fff !important;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent !important;
+	padding: 5px 5px !important;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-size: 14pt;
+}
+
+button.confirm:hover {
+	background-color: rgba(255,255,255,0.1) !important;
+}
+
+footer {
+	width: 100%;
+	display: block;
+	text-align: center;
+	padding: 10px;
+	color: #fff;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1rem;
+	background-color: #303030;
 }

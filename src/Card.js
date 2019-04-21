@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import SweetAlert from 'sweetalert-react';
+import 'sweetalert/dist/sweetalert.css';
+import LongDescription from './LongDescription'
 
 class Card extends Component {
 	state = {
-		pages: this.props.pages
+		pages: this.props.pages,
+		show: false
 	}
 	render() {
 		function shuffle(array) {
@@ -63,7 +67,10 @@ class Card extends Component {
 								</div>
 								<div className="btns">
 									<a href={page.link} target="_blank" rel='noopener noreferrer' className='btn link-to-wiki-page'>Pagina Wiki</a>
-									<button className='btn link-to-long-description'>Descrição Longa</button>
+									<LongDescription
+										desc={page.longDescription}
+										title={page.title}
+									/>
 								</div>
 							</div>
 						</div>
