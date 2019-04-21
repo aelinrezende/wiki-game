@@ -1,0 +1,299 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'Raleway', sans-serif;
+}
+
+body {
+	background-color: #212121 !important;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: 'Raleway', sans-serif;
+}
+.container {
+  padding: 0 10px;
+  color: #fff;
+  display: block;
+  float: right;
+}
+
+.container-deck {
+	width: 100%;
+	align-content: center;
+	align-self: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.wrapper {
+	align-content: center;
+	align-self: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.duel-disk {
+	margin:  20px 0 0 0;
+	padding: 0 0 10px 0;
+	background-color: rgba(50,50,50, 0.5);
+	box-shadow: 14px 16px 44px -4px rgba(0,0,0,.3);
+}
+
+.slots {
+	list-style-type: none;
+}
+
+.slot {
+	display: inline-block;
+	margin: 20px 10px;
+}
+
+.card {
+	width: 250px;
+	height: 480px;
+	box-shadow: 14px 16px 44px -4px rgba(0,0,0,.3);
+	background-color: #878787;
+}
+
+.image-container {
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.image-container img {
+	width: 100%;
+	height: 100%;
+	align-content: center;
+	align-self: center;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.info-container {
+	padding: 5px 10px;
+}
+
+.info-container h1 {
+	text-align: center;
+	font-weight: bolder;
+	font-size: 16pt;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	width: 100%;
+}
+
+.info-container p {
+	font-size: 10pt;
+	height: 100px;
+	text-align: left;
+}
+
+.description-cont {
+	overflow-y: scroll;
+}
+
+#scroll::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+	background-color: transparent;
+}
+
+#scroll::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+#scroll::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #555;
+}
+
+.info-container .points {
+	border-top: 1px solid  rgba(0,0,0,.5);
+	margin: 15px 0 0 0;
+	padding: 10px 0 0 0;
+	display: block;
+}
+
+.info-container .rating {
+	float: right;
+	font-size: 16pt;
+}
+
+.info-container .overall {
+	font-size: 16pt;
+	float: left;
+}
+
+.btns {
+	display: inline-block;
+	margin: 2px 0 0 0;
+	font-size: 5pt;
+}
+
+.btn {
+  display: inline-block;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: transparent;
+  padding: 5px 5px !important;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem !important;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn.link-to-wiki-page {
+  display: block;
+  color: #fff;
+  border: 2px solid #fff !important;
+  float: left;
+  font-size: 11pt;
+  text-align: left;
+  margin: 0 10px 0 0;
+  font-size: 10pt;
+}
+
+.btn.link-to-wiki-page:hover {
+  color: #000;
+  background-color: #d6d6d6;
+  border: 2px solid #fff !important;
+}
+
+.btn.link-to-long-description {
+  display: block;
+  color: #fff;
+  float: right;
+  font-size: 11pt;
+  text-align: right;
+  font-size: 10pt;
+}
+
+.btn.link-to-long-description:hover {
+  color: #fff;
+  border: 1px solid #fff !important;
+}
+
+span.substract-points {
+	background-image: url('./icons/substract.svg');
+}
+
+/* Lista de jogadores */
+
+.player-list {
+	display: block;
+	float: left;
+	color: #fff;
+	margin: 10px 0 0 0;
+}
+
+.wrapper-players ul {
+	list-style-type: none;
+	display: block;
+}
+
+.wrapper-players ul li {
+	text-align: center;
+	list-style-type: none;
+}
+
+.player-point button {
+	border-radius: 0.25rem !important;
+	border: 2px solid rgba(220,220,220,.3) !important;
+	color: #fff;;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	padding: 5px 5px !important;
+	font-size: 1rem;
+	line-height: 1.5;
+	margin: 2px;
+	font-size: 14pt;
+}
+
+.btn-shuffle {
+	display: block;
+	margin: 0 auto;
+	border-radius: 0.25rem !important;
+	border: 2px solid rgba(255,255,255,.8) !important;
+	color: #fff;;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	padding: 5px 5px !important;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-size: 14pt;
+}
+
+.players-info .points {
+	margin: 0 3px;
+}
+
+/* Registro de jogadores */
+
+.player-info-section {
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+
+.player-info-section-con {
+	margin: 0 auto;
+	display: block;
+	margin: 0 auto;
+}
+
+.add-player-form {
+	margin: 0 auto;
+}
+
+.add-player input {
+	margin: 5px auto;
+	display: block;
+}
+
+.add-player span {
+	margin: 5px auto;
+	display: block;
+	color: #fff;
+	text-align: center;
+}
+
+.add-player button {
+	margin: 0 auto;
+	display: block;
+	border-radius: 0.25rem !important;
+	border: 2px solid rgba(255,255,255,.3) !important;
+	color: #fff;;
+	text-align: center;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-color: transparent;
+	padding: 5px 5px !important;
+	font-size: 1rem;
+	line-height: 1.5;
+	font-size: 12pt;
+}

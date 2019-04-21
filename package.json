@@ -1,0 +1,36 @@
+{
+  "name": "jv",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://marcorezende.github.io/wiki-game/",
+  "dependencies": {
+    "bootstrap": "^3.4.1",
+    "form-serialize": "^0.7.2",
+    "gh-pages": "^2.0.1",
+    "react": "^16.5.2",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.5.2",
+    "react-scripts": "2.0.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "description": "...\r ## How to test the app\r - Clone this repository to your local machine\r - Install dependencies `yarn install`\r - Start the application `yarn start` The magic happens on port 3000",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC"
+}
