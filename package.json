@@ -2,11 +2,10 @@
   "name": "jv",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://marcorezende.github.io/wiki-game/",
+  "homepage": "https://marcorezende.github.io/wiki-game",
   "dependencies": {
     "bootstrap": "^3.4.1",
     "form-serialize": "^0.7.2",
-    "gh-pages": "^2.0.1",
     "react": "^16.5.2",
     "react-bootstrap": "^0.32.4",
     "react-dom": "^16.5.2",
@@ -32,5 +31,8 @@
   "description": "...\r ## How to test the app\r - Clone this repository to your local machine\r - Install dependencies `yarn install`\r - Start the application `yarn start` The magic happens on port 3000",
   "main": "index.js",
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
