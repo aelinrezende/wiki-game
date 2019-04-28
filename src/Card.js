@@ -30,6 +30,8 @@ class Card extends Component {
 			this.setState(({
 			    deck: cards
 			}))
+		} else {
+			alert('Numero minimo de cartas atingido.')
 		}
 	}
 

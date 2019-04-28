@@ -43,13 +43,13 @@ class RegisterPlayers extends Component {
 				<div className="player-info-section-con">
 					<form onSubmit={this.handleSubmit} className="add-player-form">
 						<div className="add-player">
-							<input type="text" name="name" placeholder="Name"/>
-							<input type="text" name="name" placeholder="Name"/>
-							<input type="text" name="name" placeholder="Name"/>
-							<input type="text" name="name" placeholder="Name"/>
-							<input type="text" name="name" placeholder="Name"/>
-							<button>Adicionar jogador</button>
-							<span>Devido a alguns erros, que ainda serão resolvidos,  o jogo funciona com no minimo dois jogadores.</span>
+							<input type="text" name="name" placeholder="Nome"/>
+							<input type="text" name="name" placeholder="Nome"/>
+							<input type="text" name="name" placeholder="Nome"/>
+							<input type="text" name="name" placeholder="Nome"/>
+							<input type="text" name="name" placeholder="Nome"/>
+							<button>Iniciar jogo</button>
+							<span>Caso você confie na capacidade cognitiva dos seus amigos de lembrarem suas respectivas pontuações, você pode adicionar apenas o seu nome. Caso contrario, adicione o nome de cada participante. Além disso, seus amigos podem "esquecer" a pontuação e adicionar mais pontos do que ele realmente possuem.</span>
 						</div>
 					</form>
 				</div>

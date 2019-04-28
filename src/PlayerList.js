@@ -28,7 +28,7 @@ class PlayerList extends Component {
 							<li className="players-info" key={player.id}>
 								<span>{player.name}</span>
 								<div className="player-point">
-									<button className="substract-points" onClick={() => this.changePoints(player.name, -1)}>
+									<button className="substract-points" onClick={() => this.changePoints(player.id, -1)}>
 									-
 									</button>
 										<span className="points">{player.points}</span>

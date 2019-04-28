@@ -596,7 +596,7 @@ li.players-info span {
 .player-info-section-con {
 	margin: 0 auto;
 	display: block;
-	margin: 0 auto;
+	width: 600px;
 }
 
 .add-player input {
@@ -614,7 +614,7 @@ li.players-info span {
 }
 
 .add-player span {
-	margin: 5px auto;
+	margin: 10px auto;
 	display: block;
 	color: #fff;
 	text-align: center;
