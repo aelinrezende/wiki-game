@@ -600,8 +600,17 @@ li.players-info span {
 }
 
 .add-player input {
-	margin: 5px auto;
+	margin: 8px auto;
+	color: #fff;
 	display: block;
+	border: 2px solid rgba(0,0,0,0.5);
+	padding: 2px;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+.add-player input:hover {
+	border: 2px solid rgba(50,220,102,.9) !important;
 }
 
 .add-player span {
