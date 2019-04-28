@@ -5,18 +5,36 @@ class RegisterPlayers extends Component {
 	handleSubmit = (e) => {
 		e.preventDefault()
 		const values = serializeForm(e.target, {hash: true })
-		if (this.props.onAddPlayer) {
-			const newValues = values.name.map((name) => {
-				name = {name: name, points: 0}
-				return name
-			})
 
-			for (let i = 0; i < newValues.length; i++) {
-				newValues[i].id = `Player${i}`
+		const register = (value) => {
+			this.props.onAddPlayer(value)
+			this.props.handleState('game')
+		}
+
+		if (this.props.onAddPlayer) {
+
+			if (typeof(values.name) === 'string') {
+				const newValues = [values]
+
+				for (let i = 0; i < newValues.length; i++) {
+					newValues[i].id = `Player${i}`
+				}
+
+				register(newValues)
+
+			} else {
+				const newValues = values.name.map((name) => {
+					name = {name: name, points: 0}
+					return name
+				})
+
+				for (let i = 0; i < newValues.length; i++) {
+					newValues[i].id = `Player${i}`
+				}
+
+				register(newValues)
 			}
 
-			this.props.onAddPlayer(newValues)
-			this.props.handleState('game')
 		}
 	}
 	render() {
