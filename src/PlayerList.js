@@ -6,43 +6,33 @@ class PlayerList extends Component {
 		pageState: this.props.actualPage
 	}
 
+	changePoints = (id, point) => {
+		let { allPlayers } = this.state
+		for (let i = 0; i < allPlayers.length; i++) {
+			if (allPlayers[i].id === id) {
+				var stateCopy = Object.assign({}, this.state);
+				stateCopy.allPlayers[i].points += point;
+				this.setState(stateCopy);
+			}
+		}
+	}
+
 	render() {
 		let { allPlayers } = this.state
 
-		const addPoints = (name) => {
-			for (let i = 0; i < allPlayers.length; i++) {
-				if (allPlayers[i].name === name) {
-					var stateCopy = Object.assign({}, this.state);
-					stateCopy.allPlayers[i].points += 1;
-					this.setState(stateCopy);
-				}
-			}
-		}
-
-		const removePoints = (name) => {
-			for (let i = 0; i < allPlayers.length; i++) {
-				if (allPlayers[i].name === name) {
-					var stateCopy = Object.assign({}, this.state);
-					stateCopy.allPlayers[i].points -= 1;
-					this.setState(stateCopy);
-				}
-			}
-		}
-
 		return (
 			<aside className="player-list">
-				<div className="wrapper-players">
 					<ul>
 					{this.state.pageState === 'game' &&
 						allPlayers.map((player) => (
-							<li className="players-info" key={player.name}>
+							<li className="players-info" key={player.id}>
 								<span>{player.name}</span>
 								<div className="player-point">
-									<button className="substract-points" onClick={() => removePoints(player.name)}>
+									<button className="substract-points" onClick={() => this.changePoints(player.name, -1)}>
 									-
 									</button>
 										<span className="points">{player.points}</span>
-									<button className="add-points" onClick={() => addPoints(player.name)}>
+									<button className="add-points" onClick={() => this.changePoints(player.id, +1)}>
 									+
 									</button>
 								</div>
@@ -50,7 +40,6 @@ class PlayerList extends Component {
 						))
 					}
 					</ul>
-				</div>
 			</aside>
 		)
 	}

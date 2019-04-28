@@ -118,7 +118,7 @@ export const pages = [
 	},
 	{
 		title: "Acacia alata var. biglandulosa",
-		shortDescription: "Acacia alata var. biglandulosa é uma espécie de leguminosa do gênero Acacia, pertencente à família Fabaceae",
+		shortDescription: "	",
 		longDescription: "Sem descrição longa.",
 		link: 'https://pt.wikipedia.org/wiki/Acacia_alata_var._biglandulosa',
 		rating: 1.5,
@@ -173,7 +173,7 @@ export const pages = [
 	{
 		title: "1900",
 		shortDescription: "1900 (MCM, na numeração romana) foi um ano comum, o último ano do século XIX do Calendário Gregoriano, da Era de Cristo, e a sua letra dominical foi G (52 semanas), teve início numa segunda-feira e terminou também numa segunda-feira. De acordo com as regras do Calendário Gregoriano, o ano de 1900 foi o 3º ano centenário depois de 1600 que não foi bissexto, no ciclo de 400 anos.",
-		longDescription: "O Presidente do Brasil, Campos Sales, visita a Argentina. É a primeira visita, em caráter oficial, de um Chefe de Estado brasileiro ao exterior.Em 14 de maio de 1900 Os segundos Jogos Olímpicos Modernos abrem em Paris (como parte da Exposição Mundial de Paris). Em 8 de Setembro de 1900 o furacão Galveston de 1900 mata cerca de 6.000-12.000 pessoas. Arthur Evans descobre a Civilização Minoica em Creta",
+		longDescription: "O Presidente do Brasil, Campos Sales, visita a Argentina. É a primeira visita, em caráter oficial, de um Chefe de Estado brasileiro ao exterior.Em 14 de maio de 1900 Os segundos Jogos Olímpicos Modernos abrem em Paris (como parte da Exposição Mundial de Paris). Em 8 de Setembro de 1900 o furacão Galveston de 1900 mata cerca de 6.000-12.000 pessoas. Arthur Evans descobre a Civilização Minoica em Creta.",
 		link: 'https://pt.wikipedia.org/wiki/1900',
 		rating: 5,
 		overall: 'RARA',

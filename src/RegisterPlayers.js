@@ -10,6 +10,11 @@ class RegisterPlayers extends Component {
 				name = {name: name, points: 0}
 				return name
 			})
+
+			for (let i = 0; i < newValues.length; i++) {
+				newValues[i].id = `Player${i}`
+			}
+
 			this.props.onAddPlayer(newValues)
 			this.props.handleState('game')
 		}
@@ -20,7 +25,7 @@ class RegisterPlayers extends Component {
 				<div className="player-info-section-con">
 					<form onSubmit={this.handleSubmit} className="add-player-form">
 						<div className="add-player">
-							<input className type="text" name="name" placeholder="Name"/>
+							<input type="text" name="name" placeholder="Name"/>
 							<input type="text" name="name" placeholder="Name"/>
 							<input type="text" name="name" placeholder="Name"/>
 							<input type="text" name="name" placeholder="Name"/>

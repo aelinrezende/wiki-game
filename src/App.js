@@ -4,10 +4,11 @@ import * as Pages from './Pages'
 import Game from './Game'
 import PlayerList from './PlayerList'
 import RegisterPlayers from './RegisterPlayers'
+import Avisos from './Avisos'
 
 class App extends Component {
   state = {
-    actualPage: 'register-players',
+    actualPage: 'avisos',
     pages: [],
     players: [],
   }
@@ -16,7 +17,7 @@ class App extends Component {
     this.setState(({
       actualPage: state
     }))
-     console.log(this.state.players)
+     // console.log(this.state.players)
   }
 
   componentDidMount() {
@@ -32,6 +33,11 @@ class App extends Component {
   render() {
     return (
       <div className="app">
+      {this.state.actualPage === 'avisos' &&
+        <Avisos
+          handleState={this.added}
+        />
+      }
       {this.state.actualPage === 'register-players' &&
         <RegisterPlayers
           onAddPlayer={(player) => {
@@ -51,7 +57,9 @@ class App extends Component {
           pages={this.state.pages}
         />
       }
-      <footer>Desenvolvido por @deiny ® | Cartas: {Pages.pages.length} de 1.002.000+ | Wi-ki-oh@beta1.0.0</footer>
+      {this.state.actualPage === 'register-players' &&
+        <footer>Desenvolvido por @deiny ® | Cartas: {Pages.pages.length} de 1.002.000+ | Wi-ki-oh@beta1.0.0</footer>
+      }
       </div>
     )
   }
