@@ -9,6 +9,7 @@ import noImage from './icons/ok.png'
 class Card extends Component {
 	state = {
 		deck: this.props.deck,
+		lastDeck: [],
 		show: false,
 		savedCard: {
 			title:'Nenhuma carta adicionada',
@@ -18,6 +19,10 @@ class Card extends Component {
 			overall: 'N.A'
 		}
 	}
+
+	componentDidMount() {
+    	this.setState({ lastDeck: this.state.deck });
+    }
 
 	removeCard = (card) => {
 		let cards = []
@@ -51,8 +56,16 @@ class Card extends Component {
 		}
 
 		const shuffleAndChange = () => {
+			let myDeck = [];
+			let fullDeck = Pages.pages
+			for (let i = 0; i < fullDeck.length; i++) {
+				if (fullDeck[i] !== saveCard) {
+					myDeck.push(fullDeck[i])
+				}
+			}
+			console.log(Pages.pages, savedCard, myDeck, fullDeck)
 			this.setState(({
-		    	deck: shuffle(Pages.pages).slice(Math.max(Pages.pages.length - 10, 1))
+		    	deck: shuffle(myDeck).slice(Math.max(myDeck.length - 10, 1))
 		    }))
 		}
 
@@ -99,28 +112,40 @@ class Card extends Component {
 
 		const saveCard = (card) => {
 			let fullDeck = [];
+			let savedCardActual = {
+				title:'Nenhuma carta adicionada',
+				img: noImage,
+				longDescription: 'Adicione uma carta.',
+				rating: 'N.A',
+				overall: 'N.A'
+			}
 
-			if (savedCard.rating !== 'N.A') {
-				for (let i = 0; i < deck.length; i++) {
-					if (deck[i] !== card) {
-						fullDeck.push(deck[i])
-					}
-				}
-				fullDeck.push(savedCard)
-				this.setState(({
-					savedCard: card,
-					deck: fullDeck
-				}))
+			if (card === savedCard) {
+				alert('Essa mesma carta ja foi adicionada.')
+
 			} else {
-				for (let i = 0; i < deck.length; i++) {
-					if (deck[i] !== card) {
-						fullDeck.push(deck[i])
+				if (savedCard.rating !== "N.A") {
+					for (let i = 0; i < deck.length; i++) {
+						if (deck[i] !== card) {
+							fullDeck.push(deck[i])
+						}
 					}
+					fullDeck.push(savedCard)
+					this.setState(({
+						savedCard: card,
+						deck: fullDeck
+					}))
+				} else {
+					for (let i = 0; i < deck.length; i++) {
+						if (deck[i] !== card) {
+							fullDeck.push(deck[i])
+						}
+					}
+					this.setState(({
+						savedCard: card,
+						deck: fullDeck
+					}))
 				}
-				this.setState(({
-					savedCard: card,
-					deck: fullDeck
-				}))
 			}
 
 		}
@@ -133,13 +158,25 @@ class Card extends Component {
 				rating: 'N.A',
 				overall: 'N.A'
 			}
+			let isEqual = [];
+			for (let i = 0; i < deck.length; i++) {
+				if (deck[i] !== card) {
+					isEqual.push(deck[i]);
+				}
+			}
+
 			if (card.rating !== 'N.A') {
 				let fullDeck = deck;
-				fullDeck.push(card)
-				this.setState(({
-					savedCard: savedCardActual,
-					deck: fullDeck
-				}))
+				if (isEqual.length === deck.length) {
+					fullDeck.push(card)
+					this.setState(({
+						savedCard: savedCardActual,
+						deck: fullDeck,
+
+					}))
+				} else {
+					alert('Esta carta já existe no seu Deck.')
+				}
 			} else {
 				alert('Nenhuma carta adicionada')
 			}

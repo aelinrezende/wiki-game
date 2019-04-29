@@ -14,6 +14,7 @@ class RegisterPlayers extends Component {
 		if (this.props.onAddPlayer) {
 
 			if (typeof(values.name) === 'string') {
+				values.points = 0;
 				const newValues = [values]
 
 				for (let i = 0; i < newValues.length; i++) {
