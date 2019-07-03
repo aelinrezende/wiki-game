@@ -178,5 +178,23 @@ export const pages = [
 		rating: 5,
 		overall: 'RARA',
 		img: 'http://www.louletania.com/wp-content/uploads/2012/07/Albufeira-%C3%BAltimo-quartel-do-seculo-XIX.jpg'
+	},
+	{
+		title: "Cão de aponte frisão",
+		shortDescription: "Cão de aponte frisão (em alemão: stabyhoun ) é uma raça oriunda do norte dos Países baixos, considera muito rara, já que sua população não ultrapassa os 3 500 indivíduos. De pelagem lisa, tem o temperamento descrito como obediente, paciente e amigável. Fisicamente, é considerado um cão de aponte equilibrado, de estrutura robustamente construída, ideal para o trabalho, como as caçadas.",
+		longDescription: "Sem descrição longa.",
+		link: 'https://pt.wikipedia.org/wiki/C%C3%A3o_de_aponte_fris%C3%A3o',
+		rating: 5,
+		overall: 'RARA',
+		img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Friese_Stabij_P6180863.JPG/200px-Friese_Stabij_P6180863.JPG'
+	},
+	{
+		title: "Blackface",
+		shortDescription: "Blackface (do inglês, black, 'negro' e face, 'rosto') se refere à prática teatral de atores que se coloriam com o carvão de cortiça para representar personagens afro-americanos de forma exagerada, geralmente em minstrel shows norte-americanos.",
+		longDescription: "SA prática ganhou popularidade durante o século XIX e contribuiu para a proliferação de estereótipos em relação aos afro-americanos. Em 1848, minstrel shows com blackfaces eram uma arte nacional americana da época traduzida em arte formal, como óperas em termos populares para uma audiência geral. No início do século 20, blackface ramificou-se dos minstrel shows e se tornou um gênero de teatro próprio, até que terminou com o Movimento dos direitos civis dos negros nos Estados Unidos em 1960.O blackface foi uma importante tradição de atuação do teatro americano por cerca de 100 anos, com início por volta de 1830. Rapidamente se tornou popular em outros lugares, particularmente na Grã-Bretanha, onde a tradição durou mais do que nos EUA, sendo exibida na TV em horário nobre, a mais famosa em The Black and White Minstrel Show (que terminou em 1978) e nos especiais de Natal de Are You Being Served? em 1976 e, finalmente, em 1981.",
+		link: 'https://pt.wikipedia.org/wiki/Blackface',
+		rating: -1,
+		overall: 'WTF',
+		img: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Minstrel_PosterBillyVanWare_edit.jpg/280px-Minstrel_PosterBillyVanWare_edit.jpg'
 	}
 ]

@@ -141,7 +141,7 @@ form.add-card input:hover {
 }
 
 form.add-card button {
-	margin: 0 40px 0 0;
+	margin: 0 10px 0 0;
 }
 
 /* CARTA */
@@ -188,7 +188,7 @@ form.add-card button {
 	display: block;
 	text-align: right;
 	color: #fff;
-	font-size: 5pt;
+	font-size: 7pt;
 	position: absolute;
   	top: 2px;
   	right: 0;
@@ -203,7 +203,7 @@ form.add-card button {
 }
 
 .saved-card-img-container button:hover {
-	background-color: rgba(205,18,18,0.8);
+	background-color: rgba(50,220,102,.9);
 }
 
 /* BOTÃO PARA O MODAL */
@@ -397,8 +397,8 @@ li.slot {
   color: #fff;
   border: 2px solid rgba(0,0,0,.1) !important;
   float: left;
-  margin: 0 15px 0 0;
-  font-size: 9pt;
+  margin: 0 10px 0 0;
+  font-size: 8pt;
 }
 
 .btn.link-to-wiki-page:hover {
@@ -411,7 +411,7 @@ li.slot {
   display: block;
   color: #fff;
   float: right;
-  font-size: 9pt;
+  font-size: 8pt;
   border: 2px solid rgba(0,0,0,.1) !important;
 }
 
@@ -617,7 +617,7 @@ li.players-info span {
 	margin: 10px auto;
 	display: block;
 	color: #fff;
-	text-align: center;
+	text-align: justify;
 }
 
 .add-player button {

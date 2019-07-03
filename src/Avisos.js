@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import noImage from './icons/wc.jpg'
+import noImage from './icons/wc-2.jpg'
 
 class Avisos extends Component {
 	state = {
@@ -14,7 +14,7 @@ class Avisos extends Component {
 		],
 		extras: [
 			'Todos os jogadores têm direito a "puxar" mais DUAS cartas para o seu respectivo Deck. Gastadas essas duas "puxadas", o jogador só poderá gerar mais duas cartas se ele vencer uma rodada.',
-			'Quando'
+			'Qunado vencer uma rodada, você terá direito a puxar mais 1 carta para o seu baralho.'
 		]
 	}
 	render() {
@@ -35,7 +35,7 @@ class Avisos extends Component {
 						<li><p>{extra}</p></li>
 					))}
 					</ol>
-					<p>Cada carta possui dois niveis de classificação, <i><strong>rating</strong></i> e <i><strong>overall</strong></i>. Saiba que você não precisa levar em consideração os mesmos, pois para uma determinada pessoa, certa carta pode ser considerada <strong>Rara</strong>, mas, para você e seus amigos, não.</p>
+					<p>Cada carta possui dois niveis de classificação: <i><strong>rating</strong></i> e <i><strong>overall</strong></i>. Saiba que você não precisa levar em consideração os mesmos, pois para uma determinada pessoa, certa carta pode ser considerada <strong>Rara</strong>, porém, para você e seus amigos, não.</p>
 					<p><strong>NOVAMENTE</strong>: Esse jogo depende da indole do jogador. Quem está jogando pode muito bem gerar 50 cartas e escolher as melhores, ou salvar uma carta sem ter o direito, porém isso seria muito <img src={noImage} alt=""></img> . Não seja essa pessoa.</p>
 					<p><i>Regras desenvolvidas por <strong>Cellbit</strong>, <strong>Felps</strong>, <strong>Gabi</strong> e <strong>Ljoga</strong></i>.</p>
 				</div>

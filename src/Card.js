@@ -3,8 +3,10 @@ import LongDescription from './LongDescription'
 import * as Pages from './Pages'
 import serializeForm from 'form-serialize'
 import SavedCard from './SavedCard'
-import noImage from './icons/ok.png'
-
+import noImage from './icons/wc.jpg'
+import savedImage from './icons/ok.png'
+import $ from 'jquery';
+import * as AllCardsInGame from './Pages';
 
 class Card extends Component {
 	state = {
@@ -13,10 +15,11 @@ class Card extends Component {
 		show: false,
 		savedCard: {
 			title:'Nenhuma carta adicionada',
-			img: noImage,
+			img: savedImage,
 			longDescription: 'Adicione uma carta.',
 			rating: 'N.A',
-			overall: 'N.A'
+			overall: 'N.A',
+			id: 'none'
 		}
 	}
 
@@ -56,118 +59,139 @@ class Card extends Component {
 		}
 
 		const shuffleAndChange = () => {
-			let myDeck = [];
+			let mySaved = [savedCard];
 			let fullDeck = Pages.pages
-			for (let i = 0; i < fullDeck.length; i++) {
-				if (fullDeck[i] !== saveCard) {
-					myDeck.push(fullDeck[i])
-				}
-			}
-			console.log(Pages.pages, savedCard, myDeck, fullDeck)
+
+
+			fullDeck = fullDeck.filter( ( el ) => !mySaved.includes( el ) );
+
+			console.log(mySaved, savedCard, fullDeck)
+
 			this.setState(({
-		    	deck: shuffle(myDeck).slice(Math.max(myDeck.length - 10, 1))
+		    	deck: shuffle(fullDeck).slice(Math.max(fullDeck.length - 10, 1))
 		    }))
 		}
 
 		const addCard = (e) => {
 			e.preventDefault()
-			const values = serializeForm(e.target, {hash: true})
+			if (deck.length <= 19) {
+				let mySaved = [savedCard];
+				let rest, finalDeck
+				let theDeck = []
 
-			let newDeck = deck;
+				rest = AllCardsInGame.pages.filter( ( el ) => !deck.includes( el ) );
 
-			let cards = shuffle(deck)
+				let cards = shuffle(rest).slice(Math.max(rest.length - 1, 1))
 
-			let df = [{}];
-
-			// console.log('oi', df.length)
-
-			for (let i = 0; i < newDeck.length; i++) {
-				for (let c = 0; c < cards.length; c++) {
-					if (cards[c] !== newDeck[i]) {
-						for (let d = 0; d < d.length; d++) {
-							if (df[d] !== cards[c]) {
-								console.log('oi')
-								df.push(cards[c])
-							}
-						}
-					}
+				for (let i = 0; i < cards.length; i++) {
+					finalDeck = deck
+					finalDeck.push(cards[i]);
 				}
 
+				finalDeck.push(savedCard)
+
+				for (let i = 0; i < finalDeck.length; i++) {
+					if (finalDeck[i].id !== savedCard.id) {
+						theDeck.push(finalDeck[i])
+					}
+				}
+				console.log(theDeck)
+				this.setState(({
+			    	deck: theDeck
+			    }))
+			} else {
+				alert('Voce atingiu o limite maximo de cartas')
 			}
 
-			// console.log(df)
-
-
-			cards = df.slice(Math.max(df.length - values.card, 1))
-
-			for (let i = 0; i < cards.length; i++) {
-				newDeck.push(cards[i])
-			}
-
-			// console.log(newDeck)
-			this.setState(({
-		    	card: newDeck
-		    }))
 		}
 
 		const saveCard = (card) => {
 			let fullDeck = [];
-			let savedCardActual = {
-				title:'Nenhuma carta adicionada',
-				img: noImage,
-				longDescription: 'Adicione uma carta.',
-				rating: 'N.A',
-				overall: 'N.A'
-			}
 
-			if (card === savedCard) {
-				alert('Essa mesma carta ja foi adicionada.')
+			if (this.state.deck.length > 5) {
+				if (card === savedCard) {
+					alert('Essa mesma carta ja foi adicionada.')
+
+				} else {
+					if (savedCard.id !== "none") {
+						for (let i = 0; i < deck.length; i++) {
+							if (deck[i] !== card) {
+								fullDeck.push(deck[i])
+							}
+						}
+
+						fullDeck.push(savedCard)
+						this.setState(({
+							savedCard: card,
+							deck: fullDeck
+						}))
+					} else {
+						for (let i = 0; i < deck.length; i++) {
+							if (deck[i] !== card) {
+								fullDeck.push(deck[i])
+							}
+						}
+						this.setState(({
+							savedCard: card,
+							deck: fullDeck
+						}))
+					}
+				}
 
 			} else {
-				if (savedCard.rating !== "N.A") {
-					for (let i = 0; i < deck.length; i++) {
-						if (deck[i] !== card) {
-							fullDeck.push(deck[i])
+				//eslint-disable-next-line
+				var answer = confirm("Você ficará com 4 cartas, ou seja, tem menos chances de vencer a rodada. Deseja prosseguir?")
+				if (answer) {
+				    if (savedCard.rating !== "N.A") {
+						for (let i = 0; i < deck.length; i++) {
+							if (deck[i] !== card) {
+								fullDeck.push(deck[i])
+							}
 						}
-					}
-					fullDeck.push(savedCard)
-					this.setState(({
-						savedCard: card,
-						deck: fullDeck
-					}))
-				} else {
-					for (let i = 0; i < deck.length; i++) {
-						if (deck[i] !== card) {
-							fullDeck.push(deck[i])
+
+						fullDeck.push(savedCard)
+						this.setState(({
+							savedCard: card,
+							deck: fullDeck
+						}))
+					} else {
+						for (let i = 0; i < deck.length; i++) {
+							if (deck[i] !== card) {
+								fullDeck.push(deck[i])
+							}
 						}
+						this.setState(({
+							savedCard: card,
+							deck: fullDeck
+						}))
 					}
-					this.setState(({
-						savedCard: card,
-						deck: fullDeck
-					}))
 				}
 			}
-
 		}
 
 		const saveToDeck = (card) => {
 			let savedCardActual = {
 				title:'Nenhuma carta adicionada',
-				img: noImage,
+				img: savedImage,
 				longDescription: 'Adicione uma carta.',
 				rating: 'N.A',
-				overall: 'N.A'
+				overall: 'N.A',
+				id: 'none'
 			}
-			let isEqual = [];
+			let isEqual = false;
+			let myDeck = [];
 			for (let i = 0; i < deck.length; i++) {
 				if (deck[i] !== card) {
-					isEqual.push(deck[i]);
+					myDeck.push(deck[i]);
+				}
+				if (myDeck.length === deck.length) {
+					isEqual = true;
 				}
 			}
 
-			if (card.rating !== 'N.A') {
+			if (card.id !== 'none') {
 				let fullDeck = deck;
-				if (isEqual.length === deck.length) {
+				if (isEqual === true) {
 					fullDeck.push(card)
 					this.setState(({
 						savedCard: savedCardActual,
@@ -182,14 +206,28 @@ class Card extends Component {
 			}
 		}
 
+		const onError = (src) => {
+			let allImgs = $('img')
+			let emptyIMG;
+			console.log(allImgs)
+
+			for (let i = 0; i < allImgs.length; i++) {
+				if (allImgs[i].src === src) {
+					emptyIMG = allImgs[i]
+				}
+			}
+
+			$(emptyIMG).attr("src", noImage);
+		}
+
 		return (
 			<div className="full-container">
 				<ul className='slots'>
 					{deck.map((card) => (
-						<li className='slot' key={card.title}>
+						<li className='slot' key={card.id}>
 							<div className='card'>
 								<div className='image-container'>
-									<img src={card.img} alt=''/>
+									<img src={card.img} onError={() => onError(card.img)} alt=''/>
 									<div className="action-btns">
 										<button className="btn-save" onClick={() => saveCard(card)}>Save</button>
 										<button className="btn-remove" onClick={() => this.removeCard(card)}>X</button>
@@ -225,8 +263,7 @@ class Card extends Component {
 				<section className="btn-area">
 					<div className="btn-overlay">
 						<form onSubmit={addCard} className="add-card">
-							<input type="text" name="card"/>
-							<button className="btn-game">Adicionar Cartas</button>
+							<button className="btn-game">Puxar Carta</button>
 						</form>
 						<button className="btn-game" onClick={shuffleAndChange}>Embaralhar</button>
 					</div>
