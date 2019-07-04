@@ -4,16 +4,16 @@ self.__precacheManifest = [
     "url": "/wiki-game/static/media/wc-2.fe5fd789.jpg"
   },
   {
-    "revision": "1f123bff384adc8fca74",
-    "url": "/wiki-game/static/css/main.fe93da7c.chunk.css"
+    "revision": "c466251fdaa8d8fd3d51",
+    "url": "/wiki-game/static/css/main.29fd7b21.chunk.css"
   },
   {
     "revision": "f4769f9bdb7466be65088239c12046d1",
     "url": "/wiki-game/static/media/glyphicons-halflings-regular.f4769f9b.eot"
   },
   {
-    "revision": "1b566ae157ec3e3470d4",
-    "url": "/wiki-game/static/js/1.1b566ae1.chunk.js"
+    "revision": "b9bb2592b65d5bc92d19",
+    "url": "/wiki-game/static/js/1.b9bb2592.chunk.js"
   },
   {
     "revision": "6cefc2ceab1f7ffdcdc0",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/wiki-game/static/media/ok.78ad8b22.png"
   },
   {
-    "revision": "1f123bff384adc8fca74",
-    "url": "/wiki-game/static/js/main.1f123bff.chunk.js"
+    "revision": "c466251fdaa8d8fd3d51",
+    "url": "/wiki-game/static/js/main.c466251f.chunk.js"
   },
   {
     "revision": "448c34a56d699c29117adc64c43affeb",
@@ -40,19 +40,19 @@ self.__precacheManifest = [
     "url": "/wiki-game/static/media/glyphicons-halflings-regular.fa277232.woff"
   },
   {
-    "revision": "89889688147bd7575d6327160d64e760",
-    "url": "/wiki-game/static/media/glyphicons-halflings-regular.89889688.svg"
-  },
-  {
     "revision": "e18bbf611f2a2e43afc071aa2f4e1512",
     "url": "/wiki-game/static/media/glyphicons-halflings-regular.e18bbf61.ttf"
   },
   {
-    "revision": "1b566ae157ec3e3470d4",
-    "url": "/wiki-game/static/css/1.0ce45776.chunk.css"
+    "revision": "89889688147bd7575d6327160d64e760",
+    "url": "/wiki-game/static/media/glyphicons-halflings-regular.89889688.svg"
   },
   {
-    "revision": "3bc6f4507871a53d468e3da15f897c44",
+    "revision": "b9bb2592b65d5bc92d19",
+    "url": "/wiki-game/static/css/1.c3e60db2.chunk.css"
+  },
+  {
+    "revision": "c771d9130521298cc441ed46d08e344b",
     "url": "/wiki-game/index.html"
   }
 ];
