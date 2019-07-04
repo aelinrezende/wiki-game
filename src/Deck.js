@@ -35,7 +35,7 @@ class Deck extends Component {
 			} else if (page.overall === 'PogU') {
 				page.color = '#ba2121'
 			} else if (page.overall === 'WTF') {
-				page.color = '#ba2121'
+				page.color = '#ad0c1c'
 			}
 
 			return page

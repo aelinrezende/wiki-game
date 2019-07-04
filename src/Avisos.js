@@ -14,7 +14,7 @@ class Avisos extends Component {
 		],
 		extras: [
 			'Todos os jogadores têm direito a "puxar" mais DUAS cartas para o seu respectivo Deck. Gastadas essas duas "puxadas", o jogador só poderá gerar mais duas cartas se ele vencer uma rodada.',
-			'Qunado vencer uma rodada, você terá direito a puxar mais 1 carta para o seu baralho.'
+			'Quando vencer uma rodada, você terá direito a puxar mais 1 carta para o seu baralho.'
 		]
 	}
 	render() {
