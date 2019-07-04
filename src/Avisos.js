@@ -13,8 +13,7 @@ class Avisos extends Component {
 			'O jogador (E SOMENTE ELE) que vencer uma rodada, tem direito a salvar uma carta do PRÓXIMO baralho.'
 		],
 		extras: [
-			'Todos os jogadores têm direito a "puxar" mais DUAS cartas para o seu respectivo Deck. Gastadas essas duas "puxadas", o jogador só poderá gerar mais duas cartas se ele vencer uma rodada.',
-			'Quando vencer uma rodada, você terá direito a puxar mais 1 carta para o seu baralho.'
+			'Todos os jogadores têm direito a "puxar" mais DUAS cartas para o seu respectivo Deck. Gastadas essas duas "puxadas", o jogador só poderá gerar mais cartas se vencer uma rodada.',
 		]
 	}
 	render() {
@@ -23,7 +22,7 @@ class Avisos extends Component {
 			<section className='regras'>
 				<div className="wrapper-regras">
 					<h1>COMO O JOGO FUNCIONA</h1>
-					<p>Antes de nos apronfundarmos nas regras, saiba que este é um jogo multiplayer "não-online" e "não-local", ou seja, para que ele funcione "corretamente", é necessario sinceridade, etica, moral, e boa indole dos participantes. Agora LEIA as regras.</p>
+					<p>Antes de nos apronfundarmos nas regras, saiba que este é um jogo multiplayer "não-online" e "não-local", ou seja, para que ele funcione "corretamente", é necessario sinceridade, ética, moral, e boa índole dos participantes. Agora LEIA as regras.</p>
 					<ol>
 						{regras.map((regra) => (
 							<li><p>{regra}</p></li>
@@ -36,7 +35,7 @@ class Avisos extends Component {
 					))}
 					</ol>
 					<p>Cada carta possui dois niveis de classificação: <i><strong>rating</strong></i> e <i><strong>overall</strong></i>. Saiba que você não precisa levar em consideração os mesmos, pois para uma determinada pessoa, certa carta pode ser considerada <strong>Rara</strong>, porém, para você e seus amigos, não.</p>
-					<p><strong>NOVAMENTE</strong>: Esse jogo depende da indole do jogador. Quem está jogando pode muito bem gerar 50 cartas e escolher as melhores, ou salvar uma carta sem ter o direito, porém isso seria muito <img src={noImage} alt=""></img> . Não seja essa pessoa.</p>
+					<p><strong>NOVAMENTE</strong>: Esse jogo depende da índole do jogador. Quem está jogando pode muito bem gerar 10 cartas e escolher as melhores, ou salvar uma carta sem ter o direito, porém isso seria muito <img src={noImage} alt=""></img> . Não seja essa pessoa.</p>
 					<p><i>Regras desenvolvidas por <strong>Cellbit</strong>, <strong>Felps</strong>, <strong>Gabi</strong> e <strong>Ljoga</strong></i>.</p>
 				</div>
 				<button className="btn" onClick={() => this.props.handleState('register-players')}>Próximo</button>
