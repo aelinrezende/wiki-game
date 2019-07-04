@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/wiki-game/static/media/wc-2.fe5fd789.jpg"
   },
   {
-    "revision": "c466251fdaa8d8fd3d51",
-    "url": "/wiki-game/static/css/main.29fd7b21.chunk.css"
+    "revision": "1c11fcf32b8c8cf78d72",
+    "url": "/wiki-game/static/css/main.ffd730af.chunk.css"
   },
   {
     "revision": "f4769f9bdb7466be65088239c12046d1",
@@ -28,8 +28,8 @@ self.__precacheManifest = [
     "url": "/wiki-game/static/media/ok.78ad8b22.png"
   },
   {
-    "revision": "c466251fdaa8d8fd3d51",
-    "url": "/wiki-game/static/js/main.c466251f.chunk.js"
+    "revision": "1c11fcf32b8c8cf78d72",
+    "url": "/wiki-game/static/js/main.1c11fcf3.chunk.js"
   },
   {
     "revision": "448c34a56d699c29117adc64c43affeb",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/wiki-game/static/css/1.c3e60db2.chunk.css"
   },
   {
-    "revision": "c771d9130521298cc441ed46d08e344b",
+    "revision": "ab9b55a4ca744b19dd1d24d01d8b1691",
     "url": "/wiki-game/index.html"
   }
 ];
