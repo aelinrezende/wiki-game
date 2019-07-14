@@ -1,7 +1,7 @@
 {
   "main.css": "/wiki-game/static/css/main.ffd730af.chunk.css",
-  "main.js": "/wiki-game/static/js/main.05f1c5a5.chunk.js",
-  "main.js.map": "/wiki-game/static/js/main.05f1c5a5.chunk.js.map",
+  "main.js": "/wiki-game/static/js/main.156beed4.chunk.js",
+  "main.js.map": "/wiki-game/static/js/main.156beed4.chunk.js.map",
   "static/css/1.c3e60db2.chunk.css": "/wiki-game/static/css/1.c3e60db2.chunk.css",
   "static/js/1.b9bb2592.chunk.js": "/wiki-game/static/js/1.b9bb2592.chunk.js",
   "static/js/1.b9bb2592.chunk.js.map": "/wiki-game/static/js/1.b9bb2592.chunk.js.map",
@@ -11,9 +11,9 @@
   "static/media/wc-2.jpg": "/wiki-game/static/media/wc-2.fe5fd789.jpg",
   "static/media/bootstrap.css": "/wiki-game/static/media/glyphicons-halflings-regular.89889688.svg",
   "static/media/ok.png": "/wiki-game/static/media/ok.78ad8b22.png",
-  "static/css/main.ffd730af.chunk.css.map": "/wiki-game/static/css/main.ffd730af.chunk.css.map",
   "static/css/1.c3e60db2.chunk.css.map": "/wiki-game/static/css/1.c3e60db2.chunk.css.map",
+  "static/css/main.ffd730af.chunk.css.map": "/wiki-game/static/css/main.ffd730af.chunk.css.map",
   "index.html": "/wiki-game/index.html",
-  "precache-manifest.b4e8c7704dd2edc1abfb3137d2bc49f4.js": "/wiki-game/precache-manifest.b4e8c7704dd2edc1abfb3137d2bc49f4.js",
+  "precache-manifest.60c1ef95e6160c55c68eacd67854b04f.js": "/wiki-game/precache-manifest.60c1ef95e6160c55c68eacd67854b04f.js",
   "service-worker.js": "/wiki-game/service-worker.js"
 }
