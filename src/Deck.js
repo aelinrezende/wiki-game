@@ -18,10 +18,6 @@ class Deck extends Component {
 		return array;
 	}
 
-		onError(error){
-		    console.log('oi')
-		}
-
 	render() {
 		const { deck } = this.state
 
@@ -31,9 +27,9 @@ class Deck extends Component {
 			} else if (page.overall === 'RARA') {
 				page.color = '#fcd40c'
 			} else if (page.overall === 'SUPER RARA') {
+				page.color = '#EF6322'
+			} else if (page.overall === 'LENDÁRIA') {
 				page.color = '#0cdcfc'
-			} else if (page.overall === 'PogU') {
-				page.color = '#ba2121'
 			} else if (page.overall === 'WTF') {
 				page.color = '#ad0c1c'
 			}
